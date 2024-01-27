@@ -1,10 +1,13 @@
 body{
     display: flex;
     flex-direction: column;
-    padding:70px;
+    padding:30px;
     text-align: center;
     align-items: center;
     font-family: arial;
+}
+images{
+    top:40px;
 }
 
 titel{
@@ -19,26 +22,49 @@ subtitle{
     font-size: 33px;
     background-color: white;
 }
+subsubtitle{
+    font-size: 20px;
+    background-color: white;
+    font-weight:lighter;
+    translate: 0 8px;
+    top: -30px; 
+    margin-bottom: -30px;
+    background-color:#002c9323;
+    padding:2px;
+    padding-left:5px;
+    padding-right:5px;
+}
 
 downloads{
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
-    gap:80px;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width:100%;
+    /* margin:100%; */
+    /* gap:40px; */
     font-size: 60px;
 }
 downlink{
     background-color: rgb(103, 217, 255);
-    border: solid 15px rgb(181, 221, 255);
+    border: solid 15px rgb(181, 234, 255);
     padding:23px;
     border-radius: 40px;
     height:fit-content;
     transition: 0.2s;
+    width: fit-content;
 }
 downlinks{
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:15px;
+}
+.d2{
+    flex-flow: row wrap;
+    max-width: 500px;
+    /* width:fit-content; */
+    min-width: 0px;
+    /* flex-shrink: 1; */
 }
 downlink:hover{
     border-color:#0085c2;
@@ -47,6 +73,36 @@ downlink a {
     text-decoration: none;
     color:black;
 }
+downlink.smaller{
+    font-size: 30px;
+    border-width: 10px;
+    border-radius: 30px;
+    padding:15px;
+}
+#github{
+    border-color:rgb(199, 206, 255);
+    background-color:rgb(135, 159, 255);
+}
+#github:hover{
+    border-color:rgb(0, 8, 245);
+}
+#how{
+    border-color:rgb(199, 255, 212);
+    background-color:rgb(135, 255, 203);
+}
+#how:hover{
+    border-color:rgb(0, 196, 117);
+}
+
+#paypal{
+    border-color:rgb(255, 247, 178);
+    background-color:rgb(255, 217, 0);
+}
+#paypal:hover{
+    border-color:rgb(206, 158, 0);
+}
+
+
 .intext-name{
     color:#002aff;
     font-size: 120%;
@@ -61,7 +117,6 @@ images{
     z-index: -1;
     display: flex;
     flex-direction: row;
-    top:70px;
     gap:40px;
     opacity: 67%;
     align-items: center;
@@ -72,3 +127,49 @@ images{
 images img{
     height: 140px;
 }
+
+
+
+
+reviews{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+review{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:14px;
+    max-width: 250px;
+}
+review img{
+    height:80px;
+    border-radius: 100%;
+}
+
+review text{
+    
+}
+review text::before{
+    content: '"';
+}
+review text::after{
+    content: '"';
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#002c9323;
+    height: 2px;
+    margin:38px;
+  }
+
+  #teehee{
+    translate:0 -38px !important;
+    margin-bottom: -10px;
+  }
