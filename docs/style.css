@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding:70px;
+    text-align: center;
+    align-items: center;
+    font-family: arial;
+}
+
+titel{
+    font-size: 80px;
+    text-align: center;
+    background-color: white;
+    outline:solid white 60px;
+
+}
+
+subtitle{
+    font-size: 33px;
+    background-color: white;
+}
+
+downloads{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap:80px;
+    font-size: 60px;
+}
+downlink{
+    background-color: rgb(103, 217, 255);
+    border: solid 15px rgb(181, 221, 255);
+    padding:23px;
+    border-radius: 40px;
+    height:fit-content;
+    transition: 0.2s;
+}
+downlinks{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+downlink:hover{
+    border-color:#0085c2;
+}
+downlink a {
+    text-decoration: none;
+    color:black;
+}
+.intext-name{
+    color:#002aff;
+    font-size: 120%;
+}
+.duo{
+    color:rgb(79, 197, 0);
+}
+
+
+images{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    top:70px;
+    gap:40px;
+    opacity: 67%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
+}
+images img{
+    height: 140px;
+}
