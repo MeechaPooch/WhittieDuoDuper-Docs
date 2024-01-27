@@ -42,7 +42,7 @@ downloads{
     justify-content: space-evenly;
     width:100%;
     /* margin:100%; */
-    /* gap:40px; */
+    gap:20px;
     font-size: 60px;
 }
 downlink{
