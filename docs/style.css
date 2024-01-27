@@ -173,3 +173,8 @@ hr {
     translate:0 -38px !important;
     margin-bottom: -10px;
   }
+  .bodytext{
+    width:50%;
+    font-size: 20px;
+    line-height: 40px;
+  }
